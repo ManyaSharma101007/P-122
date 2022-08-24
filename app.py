@@ -58,7 +58,7 @@ def save():
 
 
 # writing api for chatbot
-@app.route("/", methods=[""])
+@app.route("/", methods=["POST"])
 def bot():
     # Get User Input
     input_text = request.json.get("user_bot_input_text")
